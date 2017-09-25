@@ -61,6 +61,7 @@ Page({
   },
   onShow:function(){
     console.log("show");
+    console.log(this.route); //显示当前页面的路径
     // 每次页面显示都会触发
   },
   onPullDownRefresh:function(){
@@ -70,6 +71,12 @@ Page({
   onReachBottom:function(){
     console.log("上拉加载");
     // 上拉加载不需要设置 属性，本来就会触发，如果设置了事件，但是可以设置 距离底部的距离 onReachBottomDistance：number 
+  },
+  onShareAppMessage: function () {
+    return {
+      title: '自定义转发标题',
+      path: '/page/user?id=123'
+    }
   }
 })
 

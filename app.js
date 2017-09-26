@@ -48,3 +48,6 @@ App({
     }
   }
 })
+// 公共模板的引用有两种方式 :import 和 include
+// import 是引用 template 标签呢的内容
+// include 是引用 除了 template 标签 文件内所有的内容 

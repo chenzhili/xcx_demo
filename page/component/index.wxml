@@ -5,9 +5,12 @@
   </view>
   <view class="index-bd">
     <view class="kind-list">
+      
       <block wx:for-items="{{list}}" wx:key="{{item.id}}">
         <view class="kind-list-item">
-          <view id="{{item.id}}" class="kind-list-item-hd {{item.open ? 'kind-list-item-hd-show' : ''}}" bindtap="kindToggle">
+          <view id="{{item.id}}" class="kind-list-item-hd {{item.open ? 'kind-list-item-hd-show' : ''}}" bindtap="kindToggle" backgroundColor="#ddd">
+          <!-- bind,catch后者可以阻止事件冒泡,当然一样有在 捕获阶段就可以执行代码的方式 
+          冒泡：bind:touchstart="handleTap1" 捕获阶段：capture-bind:touchstart="handleTap2" -->  
             <view class="kind-list-text">{{item.name}}</view>
             <image class="kind-list-img" src="resources/kind/{{item.id}}.png"></image>
           </view>

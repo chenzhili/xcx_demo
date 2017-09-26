@@ -7,10 +7,10 @@
   <view class="page-body">
     <view class="page-section page-section-spacing swiper">
       <swiper indicator-dots="{{indicatorDots}}"
-        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true"> <!--circular="{{true}}"这是衔接动画的属性 -->
         <block wx:for="{{background}}" wx:key="*this">
           <swiper-item>
-            <view class="swiper-item {{item}}"></view>
+            <view class="swiper-item {{item}}"></view> 
           </swiper-item>
         </block>
       </swiper>

@@ -12,6 +12,9 @@
       </view>
 
       <view class="progress-box">
+        <progress percent='60' show-info active stroke-width='16' activeColor='#f00' color="#ddd" backgroundColor='#ddd'/>
+      </view>
+      <view class="progress-box">
         <progress percent="40" active stroke-width="3" />
         <icon class="progress-cancel" type="cancel"></icon>
       </view>

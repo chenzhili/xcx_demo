@@ -37,4 +37,4 @@ var config = {
     downloadExampleUrl: `https://${host}/static/weapp.jpg`
 };
 
-module.exports = config
+module.exports = config;
